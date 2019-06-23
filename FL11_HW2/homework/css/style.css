@@ -1,0 +1,232 @@
+@media print {
+  nav,
+  .tm-team-img,
+  #about,
+  .carousel-indicators,
+  .blocks .tm-content-box,
+  #ideas + .tm-content-box,
+  #contact{
+    display: none;
+  }
+
+  .tm-main-content,
+  .container,
+  .tm-content-box,
+  body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+.tm-team-description-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: none;
+}
+.padding-medium {
+  padding: 0;
+}
+
+h2{
+  color: lightskyblue;
+}
+
+section > div > h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.padding-medium>ol{
+  list-style-type: none;
+  text-decoration: none;
+  position: relative;
+  max-width: 50%;
+  left: 22%;
+    }
+
+.padding-medium ol li:nth-child(odd) {
+  text-align: left;
+}
+
+.padding-medium ol li:nth-child(even) {
+  text-align: right;
+  }
+
+.padding-medium ol li::first-letter {
+  font-size: 25px;
+  color: lightskyblue;
+}
+.padding-medium ol li a {
+  color: #000;
+}
+}
+
+
+@media screen{
+  .tm-section-title-box:hover{
+    background-color: skyblue;
+    color: white;
+    font-weight: 500;
+  }
+
+  section,
+  .tm-sidebar, 
+  .tm-content-header{
+    box-shadow: 0px 0px 10px rgba(61, 55, 61, 0.7);
+  }
+
+  .tm-banner {
+    background-color:#76cdd7;
+  }
+
+  .tm-banner-inner{
+    background-color: white;
+   }
+
+  p.tm-banner-text{
+    text-shadow: 0px 10px 2px #76cdd7;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+  }
+
+  section::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 45px solid #76cdd7;
+    border-right: 45px solid transparent;
+}
+
+  .heading h2{
+    text-align: center;
+    color: #76cdd7;
+  }
+  .heading ol{
+    list-style-type: upper-roman;
+  }
+
+  .heading a{
+    color: black;
+    padding-left: 2px;
+    
+  }
+
+  .heading .padding-medium ol li:nth-child(-n+2) a:visited{
+    color: #ffb347;
+    text-decoration: none;
+    }
+
+  .heading a:hover{
+    color: #ffb347;
+    font-weight: bold;
+    text-decoration: none;
+    border-left: 2px solid #ffb347;
+  }
+
+  .heading a.text::after{
+    content: 'New';
+    color: red;
+    font-weight: bold;
+    font-size: 10px;
+    font-variant: small-caps;
+    vertical-align: top;
+    position: relative;
+  }
+
+  .box-work{
+    padding: 10px;
+  }
+
+  .box-work div p {
+    font-style: italic;
+    text-indent: 0;
+  }
+
+  .box-work p::first-letter {
+    font-size: 30px;
+  }
+
+  .box-work:nth-child(even){
+    background-color: rgb(240, 240, 240);
+  }
+
+  .contact-form input {
+    border-bottom: 2px solid lightskyblue;
+    border-radius: 3px;
+    border-color: transparent transparent lightskyblue transparent;
+    
+  }
+
+    .contact-form textarea{
+    border: 2px solid lightskyblue;;
+    border-radius: 3px;
+    resize: none;
+  }
+
+  #contact .contact-form input:focus,
+  .contact-form textarea:focus {
+    border: 1px solid #88cefa;
+    background-color: #76cdd7;
+    color:white;
+  }
+
+  .contact-form .mandatory-field::after {
+    content: '';
+    background-image: url(../img/email-icon.png);
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    top:10px;
+  }
+
+  .contact-form button{
+    float: right;
+    color: #88cefa;
+    background-color: white;
+    border: 2px solid #88cefa;
+    font-weight: 300;
+    padding: 10px 40px;
+  }
+
+  .contact-form button:hover {
+    color: white; 
+    background-color: #88cefa; 
+    border: 2px solid transparent;
+    
+  }
+
+  .tm-nav-item:hover {
+    background: rgb(240, 240, 240);
+    }
+
+    h2+p {
+      font-style: italic;
+      line-height: 1.5;
+      text-indent: 25px;
+    }
+
+    h2~p {
+      line-height: 1.5;
+      text-indent: 25px;
+    }
+
+  .tm-content-box.flex-2-col {
+   display: flex;
+  }
+
+  .tm-team-description-container.flex-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tm-banner-text {	
+    transform: rotateY(360deg);
+    transition: transform 4s;
+  }
+}
+
+
